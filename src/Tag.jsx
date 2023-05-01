@@ -2,11 +2,11 @@ import React from 'react';
 import { MdClose } from 'react-icons/md';
 import './Tags.css';
 
-const Tag = ({ tag, index, handleRemoveTagClick, handleErr }) => (
+const Tag = ({ tag, uId, handleRemove, handleErr }) => (
   <div className='tag'>
     <span>{tag}</span>
     <span className='close-button' onClick={() => {
-      handleRemoveTagClick(index);
+      handleRemove(uId);
       handleErr();
       }}>
       <MdClose />

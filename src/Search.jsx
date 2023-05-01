@@ -1,5 +1,9 @@
 import React from 'react';
 
+const handleTagSearch = (tag) => {
+  console.log('searching')
+};
+
 const Search = () => (
   <form className='search'>
     <label htmlFor='entry-search'>Search by entry:</label>
